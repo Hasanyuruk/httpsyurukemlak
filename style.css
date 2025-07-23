@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a; /* Siyah arka plan */
+  color: #fff;
+  line-height: 1.6;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222; /* Koyu arka plan */
+  padding: 30px 0;
+}
+
+.logo {
+  font-size: 5rem; /* Logo çok büyük */
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ff6347; /* Kırmızımsı renk */
+}
+
+main {
+  padding: 60px 30px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h1, h2 {
+  font-size: 6rem; /* Başlıklar çok büyük */
+  color: #ff6347; /* Kırmızımsı başlıklar */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+p, a {
+  font-size: 3rem; /* Paragraflar ve linkler çok büyük */
+  color: #ddd; /* Açık gri yazılar */
+  text-decoration: none;
+}
+
+p a:hover, footer a:hover {
+  color: #fff; /* Hoverda beyaz renk */
+  text-decoration: underline;
+}
+
+.social-buttons button {
+  display: inline-block;
+  margin: 20px;
+  padding: 25px 50px;
+  background-color: #3b3b7a;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem; /* Buton yazıları çok büyük */
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons button:hover {
+  background-color: #555; /* Buton hoverda renk değişir */
+}
+
+footer {
+  background-color: #222259;
+  padding: 60px 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 3rem; /* Footer yazıları büyük */
+}
+
+footer a {
+  font-weight: bold;
+  color: #ddd;
+}
+
+footer a:hover {
+  color: #ff6347;
+}
+
+section#about, section#social, section#feedback {
+  padding: 40px;
+  background-color: #333; /* Koyu arka plan */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+section#about h2, section#social h2, section#feedback h2 {
+  font-size: 5rem; /* Alt başlıklar çok büyük */
+  color: #ff6347;
+}
+
+section#about p, section#social p, section#feedback p {
+  font-size: 3rem; /* Paragraflar büyük */
+  color: #ddd;
+  margin-top: 15px;
+}
+
+/* Responsive Design - Küçük ekranlar için uyum */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 4rem; /* Küçük ekranlar için logo boyutu */
+  }
+
+  h1, h2 {
+    font-size: 4rem; /* Başlık boyutunu küçült */
+  }
+
+  p, a {
+    font-size: 2.5rem; /* Paragraflar küçük ekranlarda daha küçük */
+  }
+
+  .social-buttons button {
+    font-size: 2.5rem; /* Butonlar küçük ekranlarda daha küçük */
+  }
+}
